@@ -5,27 +5,33 @@
     </head>
     <body>
         <nav>
-            <span>Lab managment</span>
-            <a href="index.html">Home</a>
-            <a href="view_search_labs.html">All Labs</a>
-            <a href="view_all_labs_problems.html">Lab Problems</a>
+            <div>Lab managment</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="view_search_labs.html">All Labs</a></li>
+                <li><a href="view_all_labs_problems.html">Lab Problems</a></li>
+            </ul>
         </nav>
-        <br>
-        <label for = "lab-id">Lab ID:</label>
-        <br>
-        <input  id="lab-id" type="text" >
-        <br>
-        <br>
-        <label for = "pc-id">PC ID:</label>
-        <br>
-        <input  id="pc-id" type="text" >
-        <br>
-        <br>
-        <label>Status: </label>
-        <input id="available-pc" name="status" value="available" type="radio"> <label for="available-pc">Available</label>
-        <input id="unavailable-pc" name="status" value="unavailable" type="radio"> <label for="unavailable-pc">Unavailable</label>
-        <br>
-        <br>
-        <button>Add New PC</button>
+        <form>
+            <div>
+                <label for = "lab-id">Lab ID:</label>
+                <input  id="lab-id" type="text" required>
+            </div>
+            
+            
+            <div>
+                <label for = "pc-id">PC ID:</label>
+                <input  id="pc-id" type="text" required>
+            </div>
+            
+            
+            <div>
+                <label>Status: </label>
+                <input id="available-pc" name="status" value="available" type="radio"> <label for="available-pc">Available</label>
+                <input id="unavailable-pc" name="status" value="unavailable" type="radio"> <label for="unavailable-pc">Unavailable</label>
+            </div>
+            
+            <button type="submit" >Add New PC</button>
+        </form>
     </body>
 </html>
