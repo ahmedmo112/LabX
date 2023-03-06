@@ -1,4 +1,31 @@
 <!DOCTYPE html>
 <html>
-
+    <head>
+        <title>Add New PC</title>
+    </head>
+    <body>
+        <nav>
+            <span>Lab managment</span>
+            <a href="index.html">Home</a>
+            <a href="view_search_labs.html">All Labs</a>
+            <a href="view_all_labs_problems.html">Lab Problems</a>
+        </nav>
+        <br>
+        <label for = "lab-id">Lab ID:</label>
+        <br>
+        <input  id="lab-id" type="text" >
+        <br>
+        <br>
+        <label for = "pc-id">PC ID:</label>
+        <br>
+        <input  id="pc-id" type="text" >
+        <br>
+        <br>
+        <label>Status: </label>
+        <input id="available-pc" name="status" value="available" type="radio"> <label for="available-pc">Available</label>
+        <input id="unavailable-pc" name="status" value="unavailable" type="radio"> <label for="unavailable-pc">Unavailable</label>
+        <br>
+        <br>
+        <button>Add New PC</button>
+    </body>
 </html>
