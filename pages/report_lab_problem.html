@@ -1,4 +1,75 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Report Problem</title>
+    <meta name="Description" content="Problems occurs" />
+</head>
+
+<body>
+    <nav>
+        <p>
+        <h1>
+            Lab Management
+        </h1>
+        </p>
+        <ul>
+            <li>
+                <a href="index.html" target="_blank" title="Go to home page">Home</a>
+            </li>
+            <li>
+                <a href="view_lab.html" target="_blank" title="View all labs">View All Labs</a>
+            </li>
+            <li>
+                <a href="view_all_labs_problems.html" target="_blank" title="View all labs Problem">View All Labs
+                    Problem</a>
+            </li>
+        </ul>
+    </nav>
+    <form>
+        <div>
+            <label for="ID">Lab ID:</label>
+            <input id="ID" type="text " required placeholder="Enter The Lab ID">
+        </div>
+        <br>
+        <div>
+            <label for="num">The Number Of Pc's:</label>
+            <input id="num" type="number" required placeholder="Enter No. of PC">
+        </div>
+        <br>
+        <div>
+            <label>Type Of Problem:</label><br>
+            <input id="Soft" type="radio" name="Type" value="Software">
+            <label for="Soft">Software</label>
+        </div>
+        <div>
+            <input id="Hard" type="radio" name="Type" value="Hardware">
+            <label for="Hard">Hardware</label>
+        </div>
+        <br>
+        <div>
+            <label for=pb>Type Of Problem:</label>
+            <select name="hard_soft" id="pb">
+                <option value="Software">Software</option>
+                <option value="Hardware">Hardware</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="descp">Description Of The Problem:</label><br>
+            <textarea id="descp" name="describe" cols="33" rows="5" placeholder="Type Your Problem"></textarea>
+        </div>
+        <br>
+        <div>
+            <label for="date">Date Of Occurance:</label>
+            <input id="date" type="date">
+        </div>
+        <br>
+        <div>
+            <input type="submit">
+        </div>
+    </form>
+</body>
 
 </html>
