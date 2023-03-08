@@ -1,79 +1,70 @@
-<!-- sba7 el 5er -->
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8"/>
-        <title>View Lab</title>
-    </head>
-    <body>
-        <header>
-            <nav>
-                <h1>Lab Management</h1>
-                <a href="index.html">Home</a> |
-                <a href="view_all_labs_problems.html">CSS</a> |
-                <a href="view_search_labs.html">JavaScript</a>
-            </nav>
-        </header>
-        <br>
-        <div>
-            <form>
-                <div>
-                    <label>Lab ID: </label>
-                    <input type="text" name="ID" value="20210161" disabled>
-                </div>
-                <br>
-                <div>
-                    <label>Name: </label>
-                    <input type="text" name="name" value="elShaf3y" disabled>
-                </div>
-                <br>
-                <div>
-                    <label>building No: </label>
-                    <input type="number" name="bNum" value="5" disabled> 
-                    <label>floor No: </label>
-                    <input type="number" name="fNum" value="2" disabled>
-                </div>
-                <br>                
-                <div>
-                    <label>No. of PC's: </label>
-                    <input type="number" name="numOfPc" value="10" disabled>
-                </div>
-                <br>
-                <div>
-                    <label>Capacity: </label>
-                    <input type="number" name="cap" value="20" disabled>
-                    <label>No. of chairs: </label>
-                    <input type="number" name="numOfChair" value="15" disabled>
-                </div> 
-                <br>
-                <div>
-                    <!-- <label>Status: </label>
-                    <input type="text" name="status" role="radio" value="active" disabled>  -->
-                    <!-- <input type="radio" name="status"  value="Active" disabled >
-                    <label>Active</label> -->
-                </div> 
-                <div>
-                    <label>Status</label>
-                    <select>
-                        <option disabled selected >active</option>
-                        <option disabled>under maintenance</option>
-                    </select>
-                </div>
-                <br>
-                <div>
-                    <button>Add PC</button>
-                    <button>Edit</button> 
-                    <button>Report Problem</button>
-                </div>
-            
-            
-            <!-- <input type="submit"> -->
 
+<head>
+    <meta charset="UTF-8" />
+    <title>View Lab</title>
+</head>
 
+<body>
+    <header>
+        <nav>
+            <div>Lab Management</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="view_search_labs.html">All Labs</a></li>
+                <li><a href="view_all_labs_problems.html">PC's Problem</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br>
+    <div>
+        <form>
+            <div>
+                <label>Lab ID: </label>
+                <input type="text" name="ID" value="L12" disabled>
+            </div>
+            <br>
+            <div>
+                <label>Name: </label>
+                <input type="text" name="name" value="elShaf3y" disabled>
+            </div>
+            <br>
+            <div>
+                <label>building No: </label>
+                <input type="number" name="bNum" value="5" disabled>
+                <label>floor No: </label>
+                <input type="number" name="fNum" value="2" disabled>
+            </div>
+            <br>
+            <div>
+                <label>No. of PC's: </label>
+                <input type="number" name="numOfPc" value="10" disabled>
+            </div>
+            <br>
+            <div>
+                <label>Capacity: </label>
+                <input type="number" name="cap" value="20" disabled>
+                <label>No. of chairs: </label>
+                <input type="number" name="numOfChair" value="15" disabled>
+            </div>
+            <br>
+            <div>
+                <label>Status:</label>
+                <input id="one" type="radio" name="status" disabled>
+                <label for="one">Active</label>
+                <input id="two" type="radio" name="status" checked disabled>
+                <label for="two">Under Maintenance</label>
+            </div>
+            <br>
+            <div>
+                <button>Add PC</button>
+                <button>Edit</button>
+                <button>Report Problem</button>
+            </div>
+        </form>
 
-            </form>
-
-        </div>
-    </body>
+    </div>
+</body>
 
 </html>

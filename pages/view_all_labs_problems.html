@@ -1,81 +1,77 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>View All Problems</title>
-	<style>
-		table {
-			border-collapse: collapse;
-			width: 100%;
-			margin-top: 20px;
-		}
-		th, td {
-			text-align: left;
-			padding: 8px;
-			border: 1px solid #ddd;
-		}
-		th {
-			background-color: #f2f2f2;
-		}
-		tr:nth-child(even) {
-			background-color: #f2f2f2;
-		}
-	</style>
+    <meta charset="UTF-8" />
+    <title>PC's Problems</title>
 </head>
+
 <body>
-	<h1>View All Problems</h1>
-	<table>
-		<thead>
-			<tr>
-				<th>Lab ID</th>
-				<th>Lab Name</th>
-				<th>No. of PCs</th>
-				<th>Type</th>
-				<th>Description</th>
-				<th>Is Repaired</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td>1</td>
-				<td>Lab 1</td>
-				<td>10</td>
-				<td>Hardware</td>
-				<td>PC not turning on</td>
-				<td><input type="checkbox" name="repaired"></td>
-			</tr>
-			<tr>
-				<td>2</td>
-				<td>Lab 2</td>
-				<td>20</td>
-				<td>Software</td>
-				<td>Program not working</td>
-				<td><input type="checkbox" name="repaired"></td>
-			</tr>
-			<tr>
-				<td>3</td>
-				<td>Lab 3</td>
-				<td>15</td>
-				<td>Hardware</td>
-				<td>Printer not working</td>
-				<td><input type="checkbox" name="repaired"></td>
-			</tr>
-			<tr>
-				<td>4</td>
-				<td>Lab 4</td>
-				<td>25</td>
-				<td>Hardware</td>
-				<td>Mouse not working</td>
-				<td><input type="checkbox" name="repaired"></td>
-			</tr>
-			<tr>
-				<td>5</td>
-				<td>Lab 5</td>
-				<td>12</td>
-				<td>Software</td>
-				<td>Application crashing</td>
-				<td><input type="checkbox" name="repaired"></td>
-			</tr>
-		</tbody>
-	</table>
+    <header>
+        <nav>
+            <div>Lab Management</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="view_search_labs.html">All Labs</a></li>
+                <li><a href="view_all_labs_problems.html">PC's Problem</a></li>
+            </ul>
+        </nav>
+    </header>
+    <table>
+        <thead>
+            <tr>
+                <th>Lab ID</th>
+                <th>Lab Name</th>
+                <th>No. of PCs</th>
+                <th>Type</th>
+                <th>Description</th>
+                <th>Status</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Lab 1</td>
+                <td>10</td>
+                <td>Hardware</td>
+                <td>PC not turning on</td>
+                <td><button>Repaired</button></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Lab 2</td>
+                <td>20</td>
+                <td>Software</td>
+                <td>Program not working</td>
+                <td><button>Repaired</button></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Lab 3</td>
+                <td>15</td>
+                <td>Hardware</td>
+                <td>Printer not working</td>
+                <td><button>Repaired</button></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Lab 4</td>
+                <td>25</td>
+                <td>Hardware</td>
+                <td>Mouse not working</td>
+                <td><button>Repaired</button></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Lab 5</td>
+                <td>12</td>
+                <td>Software</td>
+                <td>Application crashing</td>
+                <td><button>Repaired</button></td>
+            </tr>
+        </tbody>
+    </table>
 </body>
+
 </html>

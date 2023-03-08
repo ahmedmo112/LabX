@@ -7,51 +7,52 @@
 </head>
 
 <body>
-    <nav>
-        <h1>Lab Management</h1>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="view_search_labs.html">View All Labs</a></li>
-            <li><a href="view_all_labs_problems.html">View Lab Problems</a></li>
-        </ul>
-    </nav>
-
+    <header>
+        <nav>
+            <div>Lab Management</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="view_search_labs.html">All Labs</a></li>
+                <li><a href="view_all_labs_problems.html">PC's Problem</a></li>
+            </ul>
+        </nav>
+    </header>
     <form action="view_lab.html">
         <div>
-            <label>Lab ID</label>
+            <label>Lab ID:</label>
             <input type="text" required>
         </div>
         <br>
         <div>
-            <label>Lab Name</label>
+            <label>Lab Name:</label>
             <input type="text" required>
         </div>
         <br>
         <div>
-            <label>Building NO.</label>
+            <label>Building NO.:</label>
             <input type="number" required min="0">
-            <label>Floor NO.</label>
-            <input type="number" required min="0">
-        </div>
-        <br>
-        <div>
-            <label>NO. OF PC's</label>
+            <label>Floor NO.:</label>
             <input type="number" required min="0">
         </div>
         <br>
         <div>
-            <label>Capacity</label>
+            <label>NO. OF PC's:</label>
             <input type="number" required min="0">
-            <label>NO. OF Chairs</label>
+        </div>
+        <br>
+        <div>
+            <label>Capacity:</label>
+            <input type="number" required min="0">
+            <label>NO. OF Chairs:</label>
             <input type="number" required min="0">
         </div>
         <br>
         <div>
             <label>Status:</label>
-                <input id="one" type="radio" name="status">
-                <label for="one">Active</label>
-                <input id="two" type="radio" name="status" required>
-                <label for="two">Under Maintenance</label>
+            <input id="one" type="radio" name="status">
+            <label for="one">Active</label>
+            <input id="two" type="radio" name="status" required>
+            <label for="two">Under Maintenance</label>
         </div>
         <br>
         <input type="submit" value="Add Lab">

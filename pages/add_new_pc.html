@@ -1,37 +1,43 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Add New PC</title>
-    </head>
-    <body>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Add New PC</title>
+</head>
+
+<body>
+    <header>
         <nav>
-            <div>Lab managment</div>
+            <div>Lab Management</div>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="view_search_labs.html">All Labs</a></li>
-                <li><a href="view_all_labs_problems.html">Lab Problems</a></li>
+                <li><a href="view_all_labs_problems.html">PC's Problem</a></li>
             </ul>
         </nav>
-        <form>
-            <div>
-                <label for = "lab-id">Lab ID:</label>
-                <input  id="lab-id" type="text" required>
-            </div>
-            
-            
-            <div>
-                <label for = "pc-id">PC ID:</label>
-                <input  id="pc-id" type="text" required>
-            </div>
-            
-            
-            <div>
-                <label>Status: </label>
-                <input id="available-pc" name="status" value="available" type="radio"> <label for="available-pc">Available</label>
-                <input id="unavailable-pc" name="status" value="unavailable" type="radio"> <label for="unavailable-pc">Unavailable</label>
-            </div>
-            
-            <button type="submit" >Add New PC</button>
-        </form>
-    </body>
+    </header>
+    <form>
+        <div>
+            <label for="lab-id">Lab ID:</label>
+            <input id="lab-id" type="text" required>
+        </div>
+        <br>
+        <div>
+            <label for="pc-id">PC ID:</label>
+            <input id="pc-id" type="text" required>
+        </div>
+        <br>
+        <div>
+            <label>Status: </label>
+            <input id="available-pc" name="status" value="available" type="radio"> <label
+                for="available-pc">Active</label>
+            <input id="unavailable-pc" name="status" value="unavailable" type="radio"> <label
+                for="unavailable-pc">Under Maintenance</label>
+        </div>
+        <br>
+        <button type="submit">Add New PC</button>
+    </form>
+</body>
+
 </html>
