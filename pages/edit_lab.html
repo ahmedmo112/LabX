@@ -1,4 +1,63 @@
 <!DOCTYPE html>
 <html>
 
+<head>
+    <meta charset="UTF-8" />
+    <title>Edit Lab</title>
+</head>
+
+<body>
+    <nav>
+        <h1>Lab Management</h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="view_search_labs.html">View All Labs</a></li>
+            <li><a href="view_all_labs_problems.html">View Lab Problems</a></li>
+        </ul>
+    </nav>
+
+    <form action="view_lab.html">
+        <div>
+            <label>Lab ID</label>
+            <input type="text" required value="L7" disabled>
+        </div>
+        <br>
+        <div>
+            <label>Lab Name</label>
+            <input type="text" required value="WEB LAB">
+        </div>
+        <br>
+        <div>
+            <label>Building NO.</label>
+            <input type="number" required min="0" value="3" disabled>
+            <label>Floor NO.</label>
+            <input type="number" required min="0" value="2" disabled>
+        </div>
+        <br>
+        <div>
+            <label>NO. OF PC's</label>
+            <input type="number" required min="0" value="12">
+        </div>
+        <br>
+        <div>
+            <label>Capacity</label>
+            <input type="number" required min="0" value="50">
+            <label>NO. OF Chairs</label>
+            <input type="number" required min="0" value="51">
+        </div>
+        <br>
+        <div>
+            <label>Status:</label>
+                <input id="one" type="radio" name="status" checked>
+                <label for="one">Active</label>
+                <input id="two" type="radio" name="status">
+                <label for="two">Under Maintenance</label>
+        </div>
+        <br>
+        <input type="submit" value="Update Lab">
+        <input type="reset" value="Delete Lab">
+    </form>
+
+</body>
+
 </html>
