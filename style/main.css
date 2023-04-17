@@ -79,7 +79,6 @@ li:hover .dropdown-content {
     font-size: 18px;
     color: black;
     font-weight: 600;
-
 }
 
 
@@ -92,14 +91,19 @@ li:hover .dropdown-content {
 .logo{
     display: flex;
     align-items: center;
-    
     font-weight: bold;
+    text-decoration: none;
 }
 
 .nav-title{
     font-size: 30px;
+   
 }
 
+.nav-title a{
+    text-decoration: none;
+
+}
 .logo img{
     height: 47px;
     margin-right: 10px;

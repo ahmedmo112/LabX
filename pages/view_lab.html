@@ -18,13 +18,12 @@
         <nav class="nav-bar">
             <div class="logo">
                 <img src="../assets/icons/logo.png">
-                <h1 class="nav-title">LabX</h1>
+                <h1  class="nav-title"><a href="index.html">LabX</a></h1>
             </div>            
             <ul>
                 <li><a class="nav-item " href="index.html">Home</a></li>
                 <li>
-                    <a class="nav-item " href="#">Labs <img src="../assets/icons/arrow_down.png"
-                            height="6px"></a>
+                    <a class="nav-item " href="view_search_labs.html">Labs <img src="../assets/icons/arrow_down.png" height="6px"></a>
 
                             <div class="dropdown-content">
                                 <a href="view_search_labs.html" >View All Labs</a>
@@ -102,7 +101,7 @@
                 <form id="addPc">
                     <h1>Add New PC</h1>
                     <label class="label" for="pc_id">PC-ID</label>
-                    <input id="pc_id" type="number" required placeholder="Enter PC ID" oninput="validatePCsNum(this.id)">
+                    <input id="pc_id" type="number" required placeholder="Enter PC ID" oninput="validateAddPC(this.id)">
         
                     <label class="label">Status:</label>
                     <div>

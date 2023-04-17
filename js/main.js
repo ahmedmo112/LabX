@@ -381,12 +381,18 @@ function editLabInfo() {
 }
 
 function deleteLab(lab_id = null) {
+   
     var id;
     if (lab_id == null) {
         var link = window.location.href;
         var url = new URL(link);
         var searchPrams = url.searchParams;
         id = searchPrams.get('id');
+        if (!id) {
+            var select = document.getElementById("select"); 
+            var idSelected = select.value;
+            id = idSelected;
+        }
     } else {
         id = lab_id;
         var confirmation = confirm("Are you sure you want to delete this lab?");
@@ -490,8 +496,25 @@ function validatePCsNum(id) {
     return true;
 }
 
+function validateAddPC(id) {
+    var elem = document.getElementById(id);
+    if (elem.value == "" || elem.value == null) {
+        elem.setCustomValidity("Please fill in the " + id + ".");
+        elem.style.outlineColor = "red";
+        return false;
+    } else if (elem.value < 1) {
+        elem.setCustomValidity("Input must be greater than 0.");
+        elem.style.outlineColor = "red";
+        return false;
+    }else {
+        elem.setCustomValidity("");
+        elem.style.outlineColor = "#5358E3";
+    }
+    return true;
+}
+
 function check_addPc() {
-    if (validatePCsNum("pc_id")) {
+    if (validateAddPC("pc_id")) {
         addPC();
     }
 }

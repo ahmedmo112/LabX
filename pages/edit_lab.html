@@ -17,13 +17,12 @@
             <nav class="nav-bar">
                 <div class="logo">
                     <img src="../assets/icons/logo.png">
-                    <h1 class="nav-title">LabX</h1>
+                    <h1  class="nav-title"><a href="index.html">LabX</a></h1>
                 </div>                
                 <ul>
                     <li><a class="nav-item " href="index.html">Home</a></li>
                     <li>
-                        <a class="nav-item " href="#">Labs <img src="../assets/icons/arrow_down.png"
-                                height="6px"></a>
+                        <a class="nav-item active-item " href="view_search_labs.html">Labs <img src="../assets/icons/arrow_down.png" height="6px"></a>
 
                         <div class="dropdown-content">
                             <a href="view_search_labs.html" >View All Labs</a>
@@ -96,17 +95,14 @@
                     <button class="btn add_btn" type="submit" id="submit" onclick="CheckValidation()" >
                         Update
                     </button>
-                    <button class="delete_btn" type="button" onclick="openPop()">Delete Lab</button>
+                    <button class="delete_btn" type="button" onclick="openPop(1)">Delete Lab</button>
                 </div>
             </form>
         </div>
     </div>
     <div class="isolate_popup" id="show">
         <div class="popup main_popup" id="popup">
-            <svg class="popup_icon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 24 24">
-                <path fill="#899ffc"
-                    d="M11 15h2v2h-2v-2m0-8h2v6h-2V7m1-5C6.47 2 2 6.5 2 12a10 10 0 0 0 10 10a10 10 0 0 0 10-10A10 10 0 0 0 12 2m0 18a8 8 0 0 1-8-8a8 8 0 0 1 8-8a8 8 0 0 1 8 8a8 8 0 0 1-8 8Z" />
-            </svg>
+            <img src="../assets/icons/warning.svg" class="popup_icon" />
             <div onclick="closePop()" class=" close_icon">
                 &times;
             </div>
@@ -121,10 +117,8 @@
         </div>
 
         <div class="popup popup_cancel" id="popup_cancel">
-            <svg class="popup_icon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 24 24">
-                <path fill="#f27474"
-                    d="m8.4 17l3.6-3.6l3.6 3.6l1.4-1.4l-3.6-3.6L17 8.4L15.6 7L12 10.6L8.4 7L7 8.4l3.6 3.6L7 15.6L8.4 17Zm3.6 5q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T2 12q0-2.075.788-3.9t2.137-3.175q1.35-1.35 3.175-2.137T12 2q2.075 0 3.9.788t3.175 2.137q1.35 1.35 2.138 3.175T22 12q0 2.075-.788 3.9t-2.137 3.175q-1.35 1.35-3.175 2.138T12 22Zm0-2q3.35 0 5.675-2.325T20 12q0-3.35-2.325-5.675T12 4Q8.65 4 6.325 6.325T4 12q0 3.35 2.325 5.675T12 20Zm0-8Z" />
-            </svg>
+            <img src="../assets/icons/cancel.svg" class="popup_icon" />
+            
             <div class="popup_content delete_popup">
                 <h1>Cancelled</h1>
                 <p>Lab has not been deleted</p>
@@ -135,10 +129,7 @@
         </div>
 
         <div class="popup popup_confirm" id="popup_confirm">
-            <svg class="popup_icon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 24 24">
-                <path fill="#a5dc86"
-                    d="m10.6 16.6l7.05-7.05l-1.4-1.4l-5.65 5.65l-2.85-2.85l-1.4 1.4l4.25 4.25ZM12 22q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T2 12q0-2.075.788-3.9t2.137-3.175q1.35-1.35 3.175-2.137T12 2q2.075 0 3.9.788t3.175 2.137q1.35 1.35 2.138 3.175T22 12q0 2.075-.788 3.9t-2.137 3.175q-1.35 1.35-3.175 2.138T12 22Zm0-2q3.35 0 5.675-2.325T20 12q0-3.35-2.325-5.675T12 4Q8.65 4 6.325 6.325T4 12q0 3.35 2.325 5.675T12 20Zm0-8Z" />
-            </svg>
+            <img src="../assets/icons/done.svg"  class="popup_icon"/>
             <div class="popup_content delete_popup">
                 <h1>Deleted</h1>
                 <p>Lab has been deleted</p>

@@ -1,6 +1,17 @@
 
 function openPop(id =null){
-    document.getElementById("show").style.display = "block";
+    if (id) {
+        var select = document.getElementById("select"); 
+        var id = select.value;
+        if (id != "Select the lab ID - Name") {
+            document.getElementById("show").style.display = "block";
+        } else {
+            alert("Please select the lab.");
+        }
+    }else{
+        document.getElementById("show").style.display = "block";
+    }
+
     
 }
 
