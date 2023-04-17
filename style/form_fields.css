@@ -1,0 +1,85 @@
+.add_edit_lab .section, .report_lab_problem .section{
+    height: calc(100% - 100px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.label{
+    display: block;
+    padding-left: 7px;
+}
+
+
+.add_edit_lab input,.select{
+    margin-bottom: 13px;
+    box-shadow: 0px 4px 30px -13px rgba(0, 0, 0, 0.25);
+}
+
+.inp{
+    width: 500px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    outline-color: black;
+    text-indent: 20px;
+}
+
+
+
+
+.radio{
+    margin-left: 10px;
+    accent-color: black;
+}
+
+#descp{
+  
+    resize: none;
+}
+
+#pc_id{
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    height: 30px;
+    width: 200px;
+    margin-bottom: 25px;
+    box-shadow: 0px 4px 30px -13px rgba(0, 0, 0, 0.25);
+    text-indent: 10px;
+}
+
+
+
+
+.report_lab_problem .container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.report_lab_problem textarea{
+    width: 500px;
+    height: 175px;
+    border-radius: 10px;
+    border: none;
+    text-indent: 20px;
+}
+
+.report_lab_problem input, .report_lab_problem select, .report_lab_problem textarea{
+    box-shadow: 0px 4px 30px -13px rgba(0, 0, 0, 0.25);
+}
+
+.report_lab_problem input[type = "datetime-local"]{
+    border: none;
+    text-indent: 15px;
+    border-radius: 10px;
+    width: 250px;
+    height: 50px;
+    font-size: 15px;
+}
+
+

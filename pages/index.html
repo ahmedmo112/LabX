@@ -4,65 +4,102 @@
 <head>
     <meta charset="UTF-8" />
     <title>Home</title>
+  
+    <link rel="stylesheet" href="../style/main.css">
+    <link rel="stylesheet" href="../style/home.css" >
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div>Lab Management</div>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="view_search_labs.html">All Labs</a></li>
-                <li><a href="view_all_labs_problems.html">PC's Problem</a></li>
-            </ul>
-        </nav>
-    </header>
-    <div>
-        <input type="text">
-        <input type="button" value="Search">
-    </div>
+    <div class="pages">
+        <header>
+            <nav class="nav-bar">
+                <div class="logo">
+                    <img src="../assets/icons/logo.png">
+                    <h1 class="nav-title">LabX</h1>
+                </div>
+                <ul>
+                    <li><a class="nav-item active-item" href="index.html">Home</a></li>
+                    <li>
+                        <a class="nav-item " href="#">Labs <img src="../assets/icons/arrow_down.png" height="6px"></a>
 
-    <div>
-        <p><b>Total labs</b></p>
-        <p>208</p>
-    </div>
+                        <div class="dropdown-content">
+                            <a href="view_search_labs.html">View All Labs</a>
+                            <div class="divider"></div>
+                            <a href="add_new_lab.html">Add new Lab</a>
+                            <div class="divider"></div>
+                            <a href="edit_lab.html">Edit Lab</a>
+                        </div>
+                    </li>
+                    <li><a class="nav-item" href="view_all_labs_problems.html">Problems <img
+                                src="../assets/icons/arrow_down.png" height="6px"></a>
+                        <div class="dropdown-content">
+                            <a href="view_all_labs_problems.html">View All Problems</a>
+                            <div class="divider"></div>
+                            <a href="report_lab_problem.html">Report a Problem</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="rec">
 
-    <div>
-        <b>
-            <p>Total PC's</p>
-        </b>
-        <p>71</p>
-    </div>
+            <div class="search-section">
+                <div class="search">
+                    <img src="../assets/icons/search.png" height="20px">
+                    <input id="search-bar" class="search-bar" type="text" placeholder="Search For Lab...">
+                    <span class="search_close_icon" id="search_close_icon" onclick="resetSearch()">&times;</span>
+                    <button onclick="searchFromHome()" class="search-button" id="search">Search</button>
+                </div>
+            </div>
 
-    <div>
-        <b><a href="view_search_labs.html">View all labs</a></b>
-    </div><br>
+        </div>
 
-    <div>
-        <b><a href="add_new_lab.html">Add new lab</a></b>
-    </div><br>
+        <div class="leftSection">
+            <p class="value-display" id="val"></p>
+            <p class="paragraph">text</p>
+            <div class="buttonsBG">
+                <button id="laps-button" value="200" class="nums">Total Labs</button>
+                <button id="pcs-button" value="1000" class="nums">Total PCs</button>
+                <button id="working-pcs" value="400" class="nums">Working PCs</button>
+                <button id="probs-button" value="300" class="nums">Total Problems</button>
+            </div>
+        </div>
+        <div class="rightSection">
 
-    <div>
-        <b><a href="add_new_pc.html">Add new PC</a></b>
-    </div><br>
+            <a href="view_search_labs.html">
 
-    <div>
-        <b>
-            <p>Worked PC's</p>
-        </b>
-        <p>64</p>
-    </div>
+                <button class="viewLabs">
+                    <div class="left-section">
+                        <img src="../assets/icons/view.png"></img>
+                    </div>
+                    <div class="right-section">
+                        <span>View&nbsp;all&nbsp;labs</span>
+                    </div>
+                </button>
+            </a>
 
-    <div>
-        <b>
-            <p>PC's Under Maintenance</p>
-        </b>
-        <p>23</p>
-    </div>
+            <a href="add_new_lab.html">
+                <button class="addLabs">
+                    <div class="left-section">
+                        <img src="../assets/icons/add.png"></img>
+                    </div>
+                    <div class="right-section">
+                        <span>Add&nbsp;new&nbsp;lab</span>
 
-    <div>
-        <b><a href="view_all_labs_problems.html">PC's Problem</a></b>
-    </div><br>
+                    </div>
+                </button>
+            </a>
+        </div>
+        
+        <!-- <div class="fab-container">
+            
+            <div class="button iconbutton">
+                
+               <p>🌙</p>
+                
+        </div> -->
+        <script src="../js/home_animation.js"></script>
+        <script src="../js/main.js"></script>
 </body>
 </head>
 

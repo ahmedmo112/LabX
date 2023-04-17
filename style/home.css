@@ -1,0 +1,193 @@
+
+.buttonsBG {
+    box-sizing: border-box;
+    /* position: absolute; */
+    background: rgba(254, 255, 255, 0.3);
+    box-shadow: 0px 4px 38px -3px rgba(0, 0, 0, 0.07);
+    border-radius: 10px;
+    padding: 10px;
+    padding-left: 17px;
+    padding-right: 17px;
+    width: 750px;
+  }
+  
+  .nums {
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 18px;
+    padding: 6px 5px;
+    border: none;
+    font-weight: 500;
+    border-radius: 8px;
+    color: #303134;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    width: 23.1%;
+  }
+  
+  .leftSection {
+    width: 63.2%;
+    display: inline-block;
+    /* margin-top: -10px; */
+  }
+  
+  .rightSection {
+    width: 36.8%;
+    float: right;
+    margin-top: 15px;
+  }
+  
+  
+  
+  .nums:hover {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .nums.active {
+    background-color: #899FFC;
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    color: #FFFFFF;
+    font-weight: 600;
+  }
+  
+  .value-display {
+    padding-right: 3%;
+    text-align: center;
+    font-size: 150px;
+    font-weight: bold;
+    color: #303134;
+  
+  }
+  
+  .paragraph {
+    padding-right: 3%;
+    animation: fadeIn 1s ease-in forwards;
+    text-align: center;
+    font-size: 20px;
+    color: #303134;
+    /* width: 250px; */
+    /* margin-left: 250px; */
+    margin-bottom: 20px;
+    margin-top: -15px;
+  }
+  
+  .fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+  }
+  
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeInText {
+    from {
+      opacity: 0;
+      font-size: 15px;
+    }
+  
+    to {
+      opacity: 1;
+      font-size: 18px;
+    }
+  }
+  
+  .viewLabs,
+  .addLabs {
+    float: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 125px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 22px 3px rgba(0, 0, 0, 0.07);
+    cursor: pointer;
+    padding: 0;
+  }
+  
+  .viewLabs .left-section,
+  .addLabs .left-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 50%;
+    background: linear-gradient(307.96deg, rgba(162, 166, 253, 0.9) 28.76%, rgba(123, 129, 255, 0.9) 110.46%);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    transition: all 0.4s ease-in-out;
+  
+  }
+  
+  .viewLabs .right-section,
+  .addLabs .right-section {
+    width: 50%;
+    flex: 1;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    animation-name: fadeInText;
+    animation-duration: 0.6s;
+    animation-fill-mode: forwards;
+  
+  }
+  
+  .viewLabs .left-section img,
+  .addLabs .left-section img {
+    width: 80px;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .viewLabs:hover .left-section,
+  .addLabs:hover .left-section {
+    width: 100%;
+    border-radius: 20px;
+  
+  }
+  
+  .viewLabs:hover .left-section img,
+  .addLabs:hover .left-section img {
+    transform: scale(1.15);
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .viewLabs:hover .right-section,
+  .addLabs:hover .right-section {
+    animation: fadeOut 0.3s forwards;
+  }
+  
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+      font-size: 18px;
+    }
+  
+    to {
+      opacity: 0;
+      font-size: 15px;
+    }
+  }
+  
+  .addLabs {
+    margin-top: 40px;
+  }
+  
+  
+  .rec {
+    padding: 20px 0;
+  }
+  

@@ -4,155 +4,135 @@
 <head>
     <meta charset="UTF-8" />
     <title>Labs</title>
+    <link rel="stylesheet" href="../style/main.css" />
+    <link rel="stylesheet" href="../style/popup.css">
+    <link rel="stylesheet" href="../style/table.css" />
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div>Lab Management</div>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="view_search_labs.html">All Labs</a></li>
-                <li><a href="view_all_labs_problems.html">PC's Problem</a></li>
-            </ul>
-        </nav>
-    </header>
-    <br>
-    <div>
-        <input type="text" placeholder="Search...">
-        <button>Search</button>
-    </div>
-    <br>
-    <table>
-        <thead>
-            <tr>
-                <th>Lab ID</th>
-                <th>Lab Name</th>
-                <th>No. of PC's</th>
-                <th>Building Number</th>
-                <th>Floor Number</th>
-                <th>Capacity</th>
-                <th>Number of chairs</th>
-                <th>Status</th>
-                <th>Actions</th>
-            </tr>
-        </thead>
-        <tbody>
+    <div class="pages">
+        <header>
+            <nav class="nav-bar">
+                <div class="logo">
+                    <img src="../assets/icons/logo.png">
+                    <h1 class="nav-title">LabX</h1>
+                </div>
+                <ul>
+                    <li><a class="nav-item " href="index.html">Home</a></li>
+                    <li>
+                        <a class="nav-item active-item" href="#">Labs <img src="../assets/icons/arrow_down.png"
+                                height="6px"></a>
 
-            <tr>
-                <td>1</td>
-                <td>Lab 1</td>
-                <td>20</td>
-                <td>1</td>
-                <td>1</td>
-                <td>20</td>
-                <td>20</td>
-                <td>Available</td>
-                <td>
-                    <a href="view_lab.html">View</a>
-                    <a href="report_lab_problem.html">Report a Problem</a>
-                </td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Lab 2</td>
-                <td>20</td>
-                <td>1</td>
-                <td>1</td>
-                <td>20</td>
-                <td>20</td>
-                <td>Available</td>
-                <td>
-                    <a href="view_lab.html">View</a>
-                    <a href="report_lab_problem.html">Report a Problem</a>
-                </td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>Lab 3</td>
-                <td>20</td>
-                <td>1</td>
-                <td>1</td>
-                <td>20</td>
-                <td>20</td>
-                <td>Available</td>
-                <td>
-                    <a href="view_lab.html">View</a>
-                    <a href="report_lab_problem.html">Report a Problem</a>
-                </td>
-            </tr>
-            <tr>
-                <td>4</td>
-                <td>Lab 4</td>
-                <td>20</td>
-                <td>1</td>
-                <td>1</td>
-                <td>20</td>
-                <td>20</td>
-                <td>Unavailable</td>
-                <td>
-                    <a href="view_lab.html">View</a>
-                    <a href="report_lab_problem.html">Report a Problem</a>
-                </td>
-            </tr>
-            <tr>
-                <td>5</td>
-                <td>Lab 5</td>
-                <td>20</td>
-                <td>1</td>
-                <td>1</td>
-                <td>12</td>
-                <td>20</td>
-                <td>Unavailable</td>
-                <td>
-                    <a href="view_lab.html">View</a>
-                    <a href="report_lab_problem.html">Report a Problem</a>
-                </td>
-            </tr>
-            <tr>
-                <td>6</td>
-                <td>Lab 6</td>
-                <td>20</td>
-                <td>1</td>
-                <td>1</td>
-                <td>22</td>
-                <td>20</td>
-                <td>Available</td>
-                <td>
-                    <a href="view_lab.html">View</a>
-                    <a href="report_lab_problem.html">Report a Problem</a>
-                </td>
-            </tr>
-            <tr>
-                <td>7</td>
-                <td>Lab 7</td>
-                <td>20</td>
-                <td>1</td>
-                <td>1</td>
-                <td>227</td>
-                <td>20</td>
-                <td>Available</td>
-                <td>
-                    <a href="view_lab.html">View</a>
-                    <a href="report_lab_problem.html">Report a Problem</a>
-                </td>
-            </tr>
-            <tr>
-                <td>8</td>
-                <td>Lab 8</td>
-                <td>20</td>
-                <td>1</td>
-                <td>1</td>
-                <td>63</td>
-                <td>20</td>
-                <td>Unavailable</td>
-                <td>
-                    <a href="view_lab.html">View</a>
-                    <a href="report_lab_problem.html">Report a Problem</a>
-                </td>
-            </tr>
-        </tbody>
-    </table>
+                        <div class="dropdown-content">
+                            <a href="view_search_labs.html" class="active-item">View All Labs</a>
+                            <div class="divider"></div>
+                            <a href="add_new_lab.html">Add new Lab</a>
+                            <div class="divider"></div>
+                            <a href="edit_lab.html">Edit Lab</a>
+                        </div>
+                    </li>
+                    <li><a class="nav-item" href="view_all_labs_problems.html">Problems <img
+                                src="../assets/icons/arrow_down.png" height="6px"></a>
+                        <div class="dropdown-content">
+                            <a href="view_all_labs_problems.html" class="">View All Problems</a>
+                            <div class="divider"></div>
+                            <a href="report_lab_problem.html">Report a Problem</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="rec">
+            <!-- <button>Search</button> -->
+            <div class="search-section">
+                <div class="search">
+                    <img src="../assets/icons/search.png" height="20px">
+                    <input id="search-bar" class="search-bar" type="text" placeholder="Search For Lab...">
+                    <span class="search_close_icon" id="search_close_icon" onclick="resetSearch()">&times;</span>
+                    <button onclick="searchLabs()" class="search-button" id="search">Search</button>
+                </div>
+            </div>
+          </div>
+        <div class="table-section">
+            <div class="table-handle-labs">
+
+
+                <div class="table-header">
+
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Lab ID ▿</th>
+                                <th>Lab Name ▿</th>
+                                <th>No. of PC's ▿</th>
+                                <th>Status ▿</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+
+                <div class="table-content">
+                    <table class="table" id="view-labs-table">
+                        <tbody>
+
+                        </tbody>
+                </div>
+
+                </table>
+            </div>
+        </div>
+
+    </div>
+    <div class="isolate_popup" id="show">
+        <div class="popup main_popup" id="popup">
+            <svg class="popup_icon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 24 24">
+                <path fill="#f8bb86"
+                    d="M11 15h2v2h-2v-2m0-8h2v6h-2V7m1-5C6.47 2 2 6.5 2 12a10 10 0 0 0 10 10a10 10 0 0 0 10-10A10 10 0 0 0 12 2m0 18a8 8 0 0 1-8-8a8 8 0 0 1 8-8a8 8 0 0 1 8 8a8 8 0 0 1-8 8Z" />
+            </svg>
+            <div onclick="closePop()" class=" close_icon">
+                &times;
+            </div>
+            <div class="popup_content delete_popup">
+                <h1>Are You Sure?</h1>
+                <p>you want to delete this lab?</p>
+            </div>
+            <div class="popup_delete_buttons">
+                <button class="popup_cancel_btn" onclick="goCancel_popup()">No, Cancel</button>
+                <button class="popup_delete_btn" onclick="goConfirm_popup()">Yes, Delete it</button>
+            </div>
+        </div>
+
+        <div class="popup popup_cancel" id="popup_cancel">
+            <svg class="popup_icon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 24 24">
+                <path fill="#f27474"
+                    d="m8.4 17l3.6-3.6l3.6 3.6l1.4-1.4l-3.6-3.6L17 8.4L15.6 7L12 10.6L8.4 7L7 8.4l3.6 3.6L7 15.6L8.4 17Zm3.6 5q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T2 12q0-2.075.788-3.9t2.137-3.175q1.35-1.35 3.175-2.137T12 2q2.075 0 3.9.788t3.175 2.137q1.35 1.35 2.138 3.175T22 12q0 2.075-.788 3.9t-2.137 3.175q-1.35 1.35-3.175 2.138T12 22Zm0-2q3.35 0 5.675-2.325T20 12q0-3.35-2.325-5.675T12 4Q8.65 4 6.325 6.325T4 12q0 3.35 2.325 5.675T12 20Zm0-8Z" />
+            </svg>
+            <div class="popup_content delete_popup">
+                <h1>Cancelled</h1>
+                <p>Lab has not been deleted</p>
+            </div>
+            <div class="popup_delete_buttons">
+                <button class="popup_delete_btn" onclick="closePop() ">OK</button>
+            </div>
+        </div>
+
+        <div class="popup popup_confirm" id="popup_confirm">
+            <svg class="popup_icon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 24 24">
+                <path fill="#a5dc86"
+                    d="m10.6 16.6l7.05-7.05l-1.4-1.4l-5.65 5.65l-2.85-2.85l-1.4 1.4l4.25 4.25ZM12 22q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T2 12q0-2.075.788-3.9t2.137-3.175q1.35-1.35 3.175-2.137T12 2q2.075 0 3.9.788t3.175 2.137q1.35 1.35 2.138 3.175T22 12q0 2.075-.788 3.9t-2.137 3.175q-1.35 1.35-3.175 2.138T12 22Zm0-2q3.35 0 5.675-2.325T20 12q0-3.35-2.325-5.675T12 4Q8.65 4 6.325 6.325T4 12q0 3.35 2.325 5.675T12 20Zm0-8Z" />
+            </svg>
+            <div class="popup_content delete_popup">
+                <h1>Deleted</h1>
+                <p>Lab has been deleted</p>
+            </div>
+            <div class="popup_delete_buttons">
+                <button class="popup_delete_btn" onclick="closePop() , deleteLab()">OK</button>
+            </div>
+        </div>
+    </div>
+    <script src="../js/main.js"></script>
+    <script src="../js/popup.js"></script>
 </body>
 
 </html>
