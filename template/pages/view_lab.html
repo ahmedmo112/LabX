@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>View Lab</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style/view_lab.css' %}">
+    <link rel="stylesheet" href="{% static 'style/main.css' %}">
+    <link rel="stylesheet" href="{% static 'style/popup.css' %}">
+    <link rel="stylesheet" href="{% static 'style/form_fields.css' %}">
+</head>
+
+<body >
+    <div class="pages">
+        {% include 'parts/nav_bar.html' %} 
+
+        <h1 id="lab-name">Lab Name: {{lab.name}} </h1>
+        <div class="data">
+                <div class="row row1">
+                    <label  class="view-label">Laboratory ID </label>
+                    <p id="lab-id">{{lab.id}}</p>
+                </div>
+                <hr class="hLine">
+                <div class="row row2">
+                    <label class="view-label">Building Number </label>
+                    <p id="building-number">{{lab.building_number}}</p>
+                </div> 
+                <hr class="hLine">
+                <div class="row row3">
+                    <label class="view-label">Floor </label>
+                    <p id="floor-number">{{lab.floor_number}}</p>
+                </div>
+                <hr class="hLine">
+                <div class="row row4">
+                    <label class="view-label">No. of PCs </label>
+                    <p id="lab-pcs">{{lab.number_of_pcs}}</p>
+                </div>
+                <hr class="hLine">
+                <div class="row row5">
+                    <label class="view-label">Capacity </label>
+                    <p id="lab-capacity">{{lab.capacity}}</p>
+                </div>
+                <hr class="hLine">
+                <div class="row row6">
+                    <label class="view-label">Chairs </label>
+                    <p id="lab-chairs">{{lab.number_of_chairs}}</p>
+                </div>
+                <hr class="hLine">
+                <div class="row row7">
+                    <label class="view-label">Status </label>
+                    <p id="lab-status">{{lab.status}}</p>
+                </div>
+           
+        </div>
+        <div class="divButtons">
+            <button class="btn" type="button" onclick="openPop()">Add PC</button>
+          
+                <a id="view" href="{% url 'edit_lab_with_id' lab.id %}">
+                    <button class="btn" id="edit-btn">
+                        <div class="icon-btn">
+                         <span>Edit Lab </span>
+                            <img src="{% static 'assets/icons/edit_button.svg' %}">
+                        </div>
+                    </button>
+                </a>
+              
+
+            <span id="reportID" onclick="reportProblem()">Report a Problem</span>
+        </div>
+  
+        <div class="isolate_popup" id="show">
+            <div class="popup">
+                <div onclick="closePop()" class=" close_icon">
+                    &times;
+                </div>
+                <form id="addPc">
+                    <h1>Add New PC</h1>
+                    <label class="label" for="pc_id">PC-ID</label>
+                    <input id="pc_id" type="number" required placeholder="Enter PC ID" oninput="validateAddPC(this.id)">
+        
+                    <label class="label">Status:</label>
+                    <div>
+                        <input id="status_one" name="status" value="available" type="radio" required>
+                        <label for="status_one">Active</label>
+                    </div>
+                    <div>
+                        <input id="status_two" name="status" value="unavailable" type="radio">
+                        <label for="status_two">Under Maintenance</label>
+                    </div>
+                    <div class="popup_buttons">
+                        <button type="submit" id="addPc" class="btn add_btn" >Add New PC</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script src="{% static 'js/main.js' %}"></script>
+        <script src="{% static 'js/popup.js' %}"></script>
+</body>
+
+</html>

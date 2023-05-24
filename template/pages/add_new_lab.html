@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Add New Lab</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style/main.css' %}">
+    <link rel="stylesheet" href="{% static 'style/form_fields.css' %}">
+    <link rel="stylesheet" href="{% static 'style/buttons.css' %}">
+
+</head>
+
+<body>
+    <div class="add_edit_lab pages">
+        {% include 'parts/nav_bar.html' %} 
+
+        <div class="section">
+            <form id="myForm" >
+                {% csrf_token %}
+                
+                <div>
+                    <label class="label">Lab Name</label>
+                    <input class="inp" type="text" name="name" id="lab-name"  placeholder="Enter the lab name..." oninput="validateLabName()">
+                </div>
+                <div>
+                    <label class="label">Building Number</label>
+                    <input class="inp" type="number" name="buildingNo"  id="building-number" placeholder="Enter the building number" oninput="validate(this.id)">
+                </div>
+                <div>
+                    <label class="label">Floor Number</label>
+                    <input class="inp" type="number" name="floorNo" id="floor-number"  max="100" placeholder="Enter the floor number" oninput="validate(this.id)">
+                </div>
+                <div>
+                    <label class="label">Number of PCs</label>
+                    <input class="inp" type="number" name="numOfPcs" id="lab-pcs"  placeholder="Enter the number of PCs" oninput="validate(this.id)">
+                </div>
+                <div>
+                        <label class="label">Capacity</label>
+                        <input class="inp" type="number" name="capacity" id="capacity"  placeholder="Enter the capacity" oninput="validate(this.id)">
+                </div>
+                <div>
+                    <label class="label">Number of chairs</label>
+                    <input class="inp" type="number"  name="numOfChairs" id="lab-chairs"  placeholder="Enter the number of chairs" oninput="validate(this.id)">
+                </div>                    
+                <div>
+                        <label>Status:</label>
+                        <input class="radio" id="status_one" type="radio" name="status" value="Active" required>
+                        <label for="status_one">Active</label>
+                        <input class="radio" id="status_two" type="radio" name="status" value="Under Maintenance">
+                        <label for="status_two">Under Maintenance</label>
+                </div>
+                <div>
+                    <button class="btn" type="reset">Reset</button>
+                    <button class="btn add_btn" type="submit" id="submit" onclick="CheckValidation()"><div class="icon-btn"> <span> Add Lab </span><img src="{% static 'assets/icons/plus.svg' %}" ></div> </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="{% static 'js/main.js' %}"></script>
+    <script src="{% static 'js/form_validations.js' %}"></script>
+
+</body>
+
+</html>

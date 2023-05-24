@@ -1,0 +1,153 @@
+[
+      {
+        "report_id": 1,
+        "lab_id": 1,
+        "lab_name": "Lab 101",
+        "num_pcs": 3,
+        "problem_type": "hardware",
+        "status": true,
+        "description": "One of the PCs is not turning on",
+        "reported_date": "2023-04-10T10:15:30Z"
+      },
+      {
+        "report_id": 2,
+        "lab_id": 1,
+        "lab_name": "Lab 101",
+        "num_pcs": 1,
+        "problem_type": "software",
+        "status": false,
+        "description": "One of the PCs has a virus",
+        "reported_date": "2023-04-09T12:30:00Z"
+      },
+      {
+        "report_id": 3,
+        "lab_id": 2,
+        "lab_name": "Lab 102",
+        "num_pcs": 5,
+        "problem_type": "hardware",
+        "status": true,
+        "description": "One of the monitors is flickering",
+        "reported_date": "2023-04-08T15:45:00Z"
+      },
+      {
+        "report_id": 4,
+        "lab_id": 3,
+        "lab_name": "Lab 103",
+        "num_pcs": 2,
+        "problem_type": "software",
+        "status": true,
+        "description": "The operating system needs to be updated",
+        "reported_date": "2023-04-07T08:00:00Z"
+      },
+      {
+        "report_id": 5,
+        "lab_id": 3,
+        "lab_name": "Lab 103",
+        "num_pcs": 1,
+        "problem_type": "hardware",
+        "status": false,
+        "description": "The keyboard is not working",
+        "reported_date": "2023-04-06T11:20:00Z"
+      },
+      {
+        "report_id": 6,
+        "lab_id": 4,
+        "lab_name": "Lab 104",
+        "num_pcs": 4,
+        "problem_type": "software",
+        "status": true,
+        "description": "Some software needs to be installed",
+        "reported_date": "2023-04-05T14:50:00Z"
+      },
+      {
+        "report_id": 7,
+        "lab_id": 5,
+        "lab_name": "Lab 105",
+        "num_pcs": 6,
+        "problem_type": "hardware",
+        "status": false,
+        "description": "The mouse is not working",
+        "reported_date": "2023-04-04T09:10:00Z"
+      },
+      {
+        "report_id": 8,
+        "lab_id": 6,
+        "lab_name": "Lab 106",
+        "num_pcs": 2,
+        "problem_type": "hardware",
+        "status": true,
+        "description": "One of the chairs is broken",
+        "reported_date": "2023-04-03T13:20:00Z"
+      },
+      {
+        "report_id": 9,
+        "lab_id": 7,
+        "lab_name": "Lab 107",
+        "num_pcs": 7,
+        "problem_type": "software",
+        "status": true,
+        "description": "The printers need to be configured",
+        "reported_date": "2023-04-02T16:30:00Z"
+        },
+        {
+        "report_id": 10,
+        "lab_id": 8,
+        "lab_name": "Lab 108",
+        "num_pcs": 3,
+        "problem_type": "hardware",
+        "status": false,
+        "description": "One of the monitors is cracked",
+        "reported_date": "2023-04-01T07:40:00Z"
+        },
+        {
+        "report_id": 11,
+        "lab_id": 9,
+        "lab_name": "Lab 109",
+        "num_pcs": 1,
+        "problem_type": "software",
+        "status": true,
+        "description": "The software is crashing frequently",
+        "reported_date": "2023-03-31T11:50:00Z"
+        },
+        {
+        "report_id": 12,
+        "lab_id": 10,
+        "lab_name": "Lab 110",
+        "num_pcs": 4,
+        "problem_type": "hardware",
+        "status": false,
+        "description": "One of the PCs is making a loud noise",
+        "reported_date": "2023-03-30T14:00:00Z"
+        },
+        {
+        "report_id": 13,
+        "lab_id": 11,
+        "lab_name": "Lab 111",
+        "num_pcs": 2,
+        "problem_type": "software",
+        "status": true,
+        "description": "The software license needs to be renewed",
+        "reported_date": "2023-03-29T17:10:00Z"
+        },
+        {
+        "report_id": 14,
+        "lab_id": 12,
+        "lab_name": "Lab 112",
+        "num_pcs": 5,
+        "problem_type": "hardware",
+        "status": true,
+        "description": "One of the PCs needs to be cleaned",
+        "reported_date": "2023-03-28T10:20:00Z"
+        },
+        {
+        "report_id": 15,
+        "lab_id": 13,
+        "lab_name": "Lab 113",
+        "num_pcs": 6,
+        "problem_type": "software",
+        "status": false,
+        "description": "The software needs to be reinstalled",
+        "reported_date": "2023-03-27T13:30:00Z"
+        }
+        ]
+        

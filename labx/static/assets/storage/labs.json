@@ -1,0 +1,152 @@
+[
+  {
+    "lab_id": 1,
+    "name": "Lab 101",
+    "building_number": 1,
+    "floor_number": 1,
+    "num_pcs": 30,
+    "capacity": 40,
+    "num_chairs": 40,
+    "status": "Active"
+  },
+  {
+    "lab_id": 2,
+    "name": "Lab 102",
+    "building_number": 1,
+    "floor_number": 1,
+    "num_pcs": 25,
+    "capacity": 35,
+    "num_chairs": 35,
+    "status": "Under Maintenance"
+  },
+  {
+    "lab_id": 3,
+    "name": "Lab 201",
+    "building_number": 2,
+    "floor_number": 2,
+    "num_pcs": 20,
+    "capacity": 30,
+    "num_chairs": 30,
+    "status": "Active"
+  },
+  {
+    "lab_id": 4,
+    "name": "Lab 202",
+    "building_number": 2,
+    "floor_number": 2,
+    "num_pcs": 15,
+    "capacity": 25,
+    "num_chairs": 25,
+    "status": "Under Maintenance"
+  },
+  {
+    "lab_id": 5,
+    "name": "Lab 301",
+    "building_number": 3,
+    "floor_number": 3,
+    "num_pcs": 35,
+    "capacity": 45,
+    "num_chairs": 45,
+    "status": "Active"
+  },
+  {
+    "lab_id": 6,
+    "name": "Lab 302",
+    "building_number": 3,
+    "floor_number": 3,
+    "num_pcs": 30,
+    "capacity": 40,
+    "num_chairs": 40,
+    "status": "Under Maintenance"
+  },
+  {
+    "lab_id": 7,
+    "name": "Lab 401",
+    "building_number": 4,
+    "floor_number": 4,
+    "num_pcs": 25,
+    "capacity": 35,
+    "num_chairs": 35,
+    "status": "Active"
+  },
+  {
+    "lab_id": 8,
+    "name": "Lab 402",
+    "building_number": 4,
+    "floor_number": 4,
+    "num_pcs": 20,
+    "capacity": 30,
+    "num_chairs": 30,
+    "status": "Under Maintenance"
+  },
+  {
+    "lab_id": 9,
+    "name": "Lab 501",
+    "building_number": 5,
+    "floor_number": 5,
+    "num_pcs": 30,
+    "capacity": 40,
+    "num_chairs": 40,
+    "status": "Active"
+  },
+  {
+    "lab_id": 10,
+    "name": "Lab 502",
+    "building_number": 5,
+    "floor_number": 5,
+    "num_pcs": 25,
+    "capacity": 35,
+    "num_chairs": 35,
+    "status": "Under Maintenance"
+  },
+  {
+    "lab_id": 11,
+    "name": "Lab 601",
+    "building_number": 6,
+    "floor_number": 6,
+    "num_pcs": 20,
+    "capacity": 30,
+    "num_chairs": 30,
+    "status": "Active"
+  },
+  {
+    "lab_id": 12,
+    "name": "Lab 602",
+    "building_number": 6,
+    "floor_number": 6,
+    "num_pcs": 15,
+    "capacity": 25,
+    "num_chairs": 25,
+    "status": "Under Maintenance"
+  },
+  {
+    "lab_id": 13,
+    "name": "Lab 701",
+    "building_number": 7,
+    "floor_number": 7,
+    "num_pcs": 35,
+    "capacity": 45,
+    "num_chairs": 45,
+    "status": "Active"
+  },
+  {
+    "lab_id": 14,
+    "name": "Lab 702",
+    "building_number": 7,
+    "floor_number": 7,
+    "num_pcs": 30,
+    "capacity": 40,
+    "num_chairs": 40,
+    "status": "Under Maintenance"
+  },
+  {
+    "lab_id": 15,
+    "name": "Lab 801",
+    "building_number": 8,
+    "floor_number": 8,
+    "num_pcs": 25,
+    "capacity": 35,
+    "num_chairs": 35,
+    "status": "Active"
+  }
+]

@@ -1,0 +1,32 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'style/main.css' %}">
+
+<header>
+    <nav class="nav-bar">
+        <div class="logo">
+            <img src="{% static 'assets/icons/logo.png' %}">
+            <h1  class="nav-title"><a href="{% url 'home' %}">LabX</a></h1>
+        </div>
+        <ul>
+            <li><a class="nav-item " href="{% url 'home' %}">Home</a></li>
+            <li>
+                <a class="nav-item  " href="{% url 'view_search_labs' %}">Labs <img src="{% static 'assets/icons/arrow_down.png' %}" height="6px"></a>
+                <div class="dropdown-content">
+                    <a href="{% url 'view_search_labs' %}">View All Labs</a>
+                    <div class="divider"></div>
+                    <a href="{% url 'add_new_lab' %}" class="">Add new Lab</a>
+                    <div class="divider"></div>
+                    <a href="{% url 'edit_lab' %}">Edit Lab</a>
+                </div>
+            </li>
+            <li>
+                <a class="nav-item" href="{% url 'view_all_labs_problems' %}">Problems <img src="{% static 'assets/icons/arrow_down.png' %}" height="6px"></a>
+                <div class="dropdown-content">
+                    <a href="{% url 'view_all_labs_problems' %}" class="">View All Problems</a>
+                    <div class="divider"></div>
+                    <a href="{% url 'report_lab_problem' %}">Report a Problem</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+</header>

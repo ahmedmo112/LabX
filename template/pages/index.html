@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Home</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style/main.css'  %}">
+    <link rel="stylesheet" href="{% static 'style/home.css'  %}">
+    
+</head>
+
+<body>
+    <div class="pages">
+        {% include 'parts/nav_bar.html' %} 
+        <div class="rec">
+
+            <div class="search-section">
+                <div class="search">
+                    <img src="{% static 'assets/icons/search.png' %}" height="20px">
+                    <input id="search-bar" class="search-bar" type="text" placeholder="Search For Lab...">
+                    <span class="search_close_icon" id="search_close_icon" onclick="resetSearch()">&times;</span>
+                    <button onclick="searchFromHome()" class="search-button" id="search">Search</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="leftSection">
+            <p class="value-display" id="val">{{statistics.total_labs}}</p>
+            <p class="paragraph">text</p>
+            <div class="buttonsBG">
+                <button id="laps-button" value="{{statistics.total_labs}}" class="nums">Total Labs</button>
+                <button id="pcs-button" value="{{statistics.total_pcs}}" class="nums">Total PCs</button>
+                <button id="working-pcs" value="{{statistics.total_working_pcs}}" class="nums">Working PCs</button>
+                <button id="probs-button" value="{{statistics.total_problems}}" class="nums">Total Problems</button>
+            </div>
+        </div>
+        <div class="rightSection">
+
+            <a href="{% url 'view_search_labs' %}">
+
+                <button class="viewLabs">
+                    <div class="left-section">
+                        <img src="{% static 'assets/icons/view.png' %}"></img>
+                    </div>
+                    <div class="right-section">
+                        <span>View&nbsp;all&nbsp;labs</span>
+                    </div>
+                </button>
+            </a>
+
+            <a href="{% url 'add_new_lab' %}">
+                <button class="addLabs">
+                    <div class="left-section">
+                        <img src="{% static 'assets/icons/add.png' %}"></img>
+                    </div>
+                    <div class="right-section">
+                        <span>Add&nbsp;new&nbsp;lab</span>
+                    </div>
+                </button>
+            </a>
+        </div>
+        
+        <!-- <div class="fab-container">
+            
+            <div class="button iconbutton">
+                
+               <p>🌙</p>
+                
+        </div> -->
+        <script src="{% static 'js/home_animation.js' %}"></script>
+        <script src="{% static 'js/search.js' %}"></script>
+        <script src="{% static 'js/main.js' %}"></script>
+</body>
+</head>
+
+</html>

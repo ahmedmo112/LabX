@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Labs</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style/main.css' %}" />
+    <link rel="stylesheet" href="{% static 'style/popup.css' %}">
+    <link rel="stylesheet" href="{% static 'style/table.css' %}" />
+</head>
+
+<body>
+    <div class="pages">
+        {% include 'parts/nav_bar.html' %} 
+    
+        <div class="rec">
+            <div class="search-section">
+                <div class="search">
+                    <img src="{% static 'assets/icons/search.png' %}" height="20px">
+                    <input id="search-bar" class="search-bar" type="text" placeholder="Search For Lab...">
+                    <span class="search_close_icon" id="search_close_icon" onclick="resetSearch()">&times;</span>
+                    <button onclick="searchLabs()" class="search-button" id="search">Search</button>
+                </div>
+            </div>
+        </div>
+        <div class="table-section">
+            <div class="table-handle-labs">
+                <div class="table-header">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Lab ID ▿</th>
+                                <th>Lab Name ▿</th>
+                                <th>No. of PC's ▿</th>
+                                <th>Status ▿</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+                {% csrf_token %} 
+                <div class="table-content">
+                    <table class="table" id="view-labs-table">
+                        <tbody>
+                            {% for lab in labs %}
+                                <tr id="lab-{{lab.id}}">
+                                    <td >{{lab.id}}</td>
+                                    <td>{{lab.name}}</td>
+                                    <td>{{lab.number_of_pcs}}</td>
+                                    <td>{{lab.status}}</td>
+                                    <td>
+                                        <div class="table-actions">
+                                            <a id="report" href="{% url 'report_lab_problem_with_id' lab.id %}">Report</a>
+                                            <a id="view" href="{% url 'view_lab' lab.id %}">
+                                                <img src="{% static 'assets/icons/eye.svg' %}" height="26px">
+                                            </a>
+                                            <a href="{% url 'edit_lab_with_id' lab.id %}" id="edit">
+                                                <img src="{% static 'assets/icons/edit.svg' %}" height="26px">
+                                            </a>
+                                                <img src="{% static 'assets/icons/delete.svg' %}" onclick="deleteLab({{lab.id}})">
+                                        </div>
+                                    </td>
+                                </tr>
+                            {% endfor %} 
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="isolate_popup" id="show">
+        <div class="popup main_popup" id="popup">
+            <svg class="popup_icon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 24 24">
+                <path fill="#f8bb86"
+                    d="M11 15h2v2h-2v-2m0-8h2v6h-2V7m1-5C6.47 2 2 6.5 2 12a10 10 0 0 0 10 10a10 10 0 0 0 10-10A10 10 0 0 0 12 2m0 18a8 8 0 0 1-8-8a8 8 0 0 1 8-8a8 8 0 0 1 8 8a8 8 0 0 1-8 8Z" />
+            </svg>
+            <div onclick="closePop()" class=" close_icon">
+                &times;
+            </div>
+            <div class="popup_content delete_popup">
+                <h1>Are You Sure?</h1>
+                <p>you want to delete this lab?</p>
+            </div>
+            <div class="popup_delete_buttons">
+                <button class="popup_cancel_btn" onclick="goCancel_popup()">No, Cancel</button>
+                <button class="popup_delete_btn" onclick="goConfirm_popup()">Yes, Delete it</button>
+            </div>
+        </div>
+
+        <div class="popup popup_cancel" id="popup_cancel">
+            <svg class="popup_icon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 24 24">
+                <path fill="#f27474"
+                    d="m8.4 17l3.6-3.6l3.6 3.6l1.4-1.4l-3.6-3.6L17 8.4L15.6 7L12 10.6L8.4 7L7 8.4l3.6 3.6L7 15.6L8.4 17Zm3.6 5q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T2 12q0-2.075.788-3.9t2.137-3.175q1.35-1.35 3.175-2.137T12 2q2.075 0 3.9.788t3.175 2.137q1.35 1.35 2.138 3.175T22 12q0 2.075-.788 3.9t-2.137 3.175q-1.35 1.35-3.175 2.138T12 22Zm0-2q3.35 0 5.675-2.325T20 12q0-3.35-2.325-5.675T12 4Q8.65 4 6.325 6.325T4 12q0 3.35 2.325 5.675T12 20Zm0-8Z" />
+            </svg>
+            <div class="popup_content delete_popup">
+                <h1>Cancelled</h1>
+                <p>Lab has not been deleted</p>
+            </div>
+            <div class="popup_delete_buttons">
+                <button class="popup_delete_btn" onclick="closePop() ">OK</button>
+            </div>
+        </div>
+
+        <div class="popup popup_confirm" id="popup_confirm">
+            <svg class="popup_icon" xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 24 24">
+                <path fill="#a5dc86"
+                    d="m10.6 16.6l7.05-7.05l-1.4-1.4l-5.65 5.65l-2.85-2.85l-1.4 1.4l4.25 4.25ZM12 22q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T2 12q0-2.075.788-3.9t2.137-3.175q1.35-1.35 3.175-2.137T12 2q2.075 0 3.9.788t3.175 2.137q1.35 1.35 2.138 3.175T22 12q0 2.075-.788 3.9t-2.137 3.175q-1.35 1.35-3.175 2.138T12 22Zm0-2q3.35 0 5.675-2.325T20 12q0-3.35-2.325-5.675T12 4Q8.65 4 6.325 6.325T4 12q0 3.35 2.325 5.675T12 20Zm0-8Z" />
+            </svg>
+            <div class="popup_content delete_popup">
+                <h1>Deleted</h1>
+                <p>Lab has been deleted</p>
+            </div>
+            <div class="popup_delete_buttons">
+                <button class="popup_delete_btn" onclick="closePop() , deleteLab()">OK</button>
+            </div>
+        </div>
+    </div>
+    <script src="{% static 'js/main.js' %}"></script>
+    <script src="{% static 'js/table_sorting.js' %}"></script>
+    <script src="{% static 'js/search.js' %}"></script>
+    <script src="{% static 'js/popup.js' %}"></script>
+</body>
+
+</html>

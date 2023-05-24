@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>PC's Problems</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style/main.css' %}">
+    <link rel="stylesheet" href="{% static 'style/table.css' %}">
+    <link rel="stylesheet" href="{% static 'style/popup.css' %}">
+
+</head>
+
+<body>
+    <div class="pages">
+        {% include 'parts/nav_bar.html' %} 
+
+        <div class="search-section">
+            <div class="search">
+                <img src="{% static 'assets/icons/search.png' %}" height="20px">
+                <input id="search-bar" class="search-bar" type="text" placeholder="Search For Lab...">
+                <span class="search_close_icon" id="search_close_icon" onclick="resetSearch()">&times;</span>
+                <button onclick="searchProblems()" class="search-button" id="search">Search</button>
+            </div>
+        </div>
+
+        <div class="table-section">
+            <div class="table-handle-problems">
+                <div class="table-header">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Report ID ▿</th>
+                                <th>Lab ID ▿</th>
+                                <th>Lab Name ▿</th>
+                                <th>No. of PCs ▿</th>
+                                <th>Type ▿</th>
+                                <th>Status ▿</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+                <div class="table-content">
+                    <table class="table" id="view-problems-table">
+                        <tbody>
+                            {% for problem in problems %}
+                                <tr>
+                                    <td onclick="viewProblemDetail({{problem.id}})">{{problem.id}}</td>
+                                    <td onclick="viewProblemDetail({{problem.id}})">{{problem.lab.id}}</td>
+                                    <td onclick="viewProblemDetail({{problem.id}})">{{problem.lab.name}}</td>
+                                    <td onclick="viewProblemDetail({{problem.id}})">{{problem.number_of_pcs}}</td>
+                                    <td onclick="viewProblemDetail({{problem.id}})">{{problem.report_status}}</td>
+                                    {% if problem.is_repaired %}
+                                        <td onclick="viewProblemDetail({{problem.id}})">Repaired</td>
+                                    {% else %}
+                                        <td onclick="viewProblemDetail({{problem.id}})">In Progress</td>
+                                        <td><button class="doneBtn" onclick="markAsDone({{problem.id}})">Mark As Done</button></td>
+                                    {% endif %}
+                                </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="view-problem-popup" class="isolate_popup">
+        <div class="popup-problem-content">
+            <span class="close" onclick="closeProblemDetailPopup()">&times;</span>
+            <h2 id="lab-reprted">Report #565</h2>
+            <div class="popup-section">
+                <div>
+                    <span class="color_word" >Laboratory ID</span>
+                    <span class="data"id="lab-id">331</span>
+                </div>
+                <hr class="hLine">
+                <div>
+                    <span class="color_word" >Laboratory Name</span>
+                    <span class="data"id="lab-name">python lab</span>
+                </div>
+                <hr class="hLine">
+                <div>
+                    <span class="color_word" >No. of PCs</span>
+                    <span class="data"id="lab-pcs">331</span>
+                </div>
+                <hr class="hLine">
+                <div>
+                    <span class="color_word">Type</span>
+                    <span class="data" id="problem-type">Hardware</span>
+                </div>
+                <hr class="hLine">
+                <div>
+                    <span class="color_word" >Status</span>
+                    <span class="data"id="problem-status">In Progress</span>
+                </div>
+                <hr class="hLine">
+                <div>
+                    <span class="color_word" >Description</span>
+                    <span class="data"id="problem-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus nostrum doloribus architecto error.</span>
+                </div>
+                <hr class="hLine">
+                <div>
+                    <span class="color_word" >Date Time</span>
+                    <span class="data"id="reoprt-date">2022/2/5 12:05PM</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="{% static 'js/main.js' %}"></script>
+    <script src="{% static 'js/table_sorting.js' %}"></script>
+    <script src="{% static 'js/search.js' %}"></script>
+    <script src="{% static 'js/popup.js' %}"></script>
+</body>
+
+</html>

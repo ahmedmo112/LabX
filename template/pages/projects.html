@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Projects</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style/main.css' %}">
+    <link rel="stylesheet" href="{% static 'style/projects.css' %}">
+    
+</head>
+<body>
+    <div class="pages">
+        <div class="projects">
+            <h3>1- Human Resources</h3>
+            <h3>2- Student Affairs</h3>
+            <h3>3- Higher studies</h3>
+            <a href="{% url 'home' %}">
+                <h3>4- Laboratory tracking</h3>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

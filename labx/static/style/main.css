@@ -1,0 +1,208 @@
+@import url('../assets/fonts/gilroy/stylesheet.css');
+
+
+
+*{
+   margin: 0;
+   box-sizing: border-box;
+   font-family: 'Gilroy';
+   color: #303134;
+}
+
+/* class page is for the div which contain the whole page*/
+.pages{
+    padding: 30px 120px 0 120px;
+    height: 100vh;
+    overflow: auto;
+    background: radial-gradient(28.87% 68.32% at 4.69% 66.83%, #A2B1FF 4.85%, rgba(245, 249, 255, 0) 100%) , radial-gradient(18.71% 44.29% at 12.97% 50%, #9CE7FF 0%, #F5F9FF 100%) ;
+}
+
+
+
+.nav-bar{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 110px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0px 4px 30px -13px rgba(0, 0, 0, 0.15);
+    width: 100%;
+}
+
+.nav-bar ul{
+    display: flex;
+    list-style: none;
+    width: 35%;
+    justify-content: space-around;
+    padding: 0;
+}
+
+li{
+    position: relative;
+    display: inline-block;
+}
+
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    box-shadow: 0px 4px 30px -13px rgba(0, 0, 0, 0.15);
+    z-index: 1;
+    background-color: white;
+    width: 200px;
+    border-radius: 20px;
+    padding: 10px 0;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-weight: 600;
+  }
+
+  .dropdown-content a:hover {color: #5358E4 ;}
+
+li:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-item{
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    font-weight: 600;
+}
+
+
+
+.nav-item:hover{
+    color: #5358E4 ;
+}
+
+
+.logo{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-title{
+    font-size: 30px;
+   
+}
+
+.nav-title a{
+    text-decoration: none;
+
+}
+.logo img{
+    height: 47px;
+    margin-right: 10px;
+}
+
+
+
+.search-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.search{
+    border-radius: 15px;
+    padding: 0 15px;
+    display: inline-flex;
+    align-items: center;
+    margin: 40px auto;
+    background-color: white;
+    box-shadow: 0px 4px 30px -13px rgba(0, 0, 0, 0.25);
+}
+
+.search-bar{
+    width: 400px;
+    height: 50px;
+    border: none;
+    margin-left: 20px;
+    background-color: transparent;
+    outline: none;
+}
+
+
+.divider{
+    width: 80%;
+    height: .5px;
+    background-color: gray;
+}
+
+.search-button{
+    border: 1px solid #5358E3;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    color: #5358E3;
+    /* font-size: 18px; */
+    padding: 5px 10px;
+    font-weight: 600;
+    border-radius: 20px;
+
+}
+
+button{
+    cursor: pointer;
+}
+
+input[type="radio"]{
+    accent-color: #303030;
+}
+
+.hLine{
+    border: 0.5px #C9CBFF solid;
+    margin: 5px 0px;
+}
+
+.search_close_icon{
+    display: none;
+    margin-right: 10px;
+    font-size: 30px;
+    font-weight: 600;
+    color: gray;
+    cursor: pointer;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #fafafa;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #5358e478;
+    border-radius: 10px;
+}
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #5358E4;
+    border-radius: 10px;
+}
+
+
+
+.active-item{
+    color: #5358E3 !important;
+}
