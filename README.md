@@ -1,9 +1,9 @@
 
-# Lab Management System
+# LabX
 
 
 
-Welcome to the Lab Management System repository! This web project aims to provide a comprehensive solution for managing labs, lab reports, and lab-related problems. With this system, you can easily add, edit, and delete labs, search for lab reports, mark problems as done, and much more.
+LabX is a web app for Laboratory Management System! This web project aims to provide a comprehensive solution for managing labs, lab reports, and lab-related problems. With this system, you can easily add, edit, and delete labs, search for lab reports, mark problems as done, and much more.
 
 ## Features
 
