@@ -96,13 +96,15 @@ This project was developed by
 - [Salma Mohamed](https://github.com/salma12004)
 - [Shrouk Tarek](https://github.com/shroukk7)
 
-  ## Screenshots
-  ![Uploading Screenshot 2023-08-14 043550.png…]()
-  ![Screenshot 2023-08-14 043709](https://github.com/ahmedmo112/lab_managment_system/assets/78311079/4ebe8d12-4398-42f9-b1f0-b8ba3a655a82)
-![Uploading Screenshot 2023-08-14 043654.png…]()
-![Uploading Screenshot 2023-08-14 043636.png…]()
-![Uploading Screenshot 2023-08-14 043605.png…]()
-![Uploading Screenshot 2023-08-14 043516.png…]()
+## Screenshots
+  
+![Screenshot 2023-08-14 043516](https://github.com/ahmedmo112/lab_managment_system/assets/78311079/e1f6048c-e085-4762-9985-e07bfd84e9e4)
+![Screenshot 2023-08-14 043550](https://github.com/ahmedmo112/lab_managment_system/assets/78311079/293455af-8394-4daf-b1f7-4bdd63e44a8e)
+![Screenshot 2023-08-14 043605](https://github.com/ahmedmo112/lab_managment_system/assets/78311079/8819d746-df58-413e-abf8-d581229c4e20)
+![Screenshot 2023-08-14 043636](https://github.com/ahmedmo112/lab_managment_system/assets/78311079/32fe1072-9863-4e0f-a609-15a3da884810)
+![Screenshot 2023-08-14 043654](https://github.com/ahmedmo112/lab_managment_system/assets/78311079/40e4dc19-2542-4ba5-8fb1-a908d07e5b63)
+![Screenshot 2023-08-14 043709](https://github.com/ahmedmo112/lab_managment_system/assets/78311079/19b16369-c6ef-4212-9e04-06d9f2afb4e3)
+
 
 
 
