@@ -97,13 +97,12 @@ This project was developed by
 - [Shrouk Tarek](https://github.com/shroukk7)
 
 ## Screenshots
-  
-![Screenshot 2023-08-14 043516](https://github.com/ahmedmo112/lab_managment_system/assets/78311079/e1f6048c-e085-4762-9985-e07bfd84e9e4)
-![Screenshot 2023-08-14 043550](https://github.com/ahmedmo112/lab_managment_system/assets/78311079/293455af-8394-4daf-b1f7-4bdd63e44a8e)
-![Screenshot 2023-08-14 043605](https://github.com/ahmedmo112/lab_managment_system/assets/78311079/8819d746-df58-413e-abf8-d581229c4e20)
-![Screenshot 2023-08-14 043636](https://github.com/ahmedmo112/lab_managment_system/assets/78311079/32fe1072-9863-4e0f-a609-15a3da884810)
-![Screenshot 2023-08-14 043654](https://github.com/ahmedmo112/lab_managment_system/assets/78311079/40e4dc19-2542-4ba5-8fb1-a908d07e5b63)
-![Screenshot 2023-08-14 043709](https://github.com/ahmedmo112/lab_managment_system/assets/78311079/19b16369-c6ef-4212-9e04-06d9f2afb4e3)
+
+![Screenshot 2023-08-14 043550](https://github.com/ahmedmo112/lab-managment-system/assets/78311079/390f6c30-4c2e-4bb9-a40c-0309c77bb68c)
+![Screenshot 2023-08-14 043605](https://github.com/ahmedmo112/lab-managment-system/assets/78311079/04c42fbe-1cf1-40c1-8e6e-5d2aab041d4b)
+![Screenshot 2023-08-14 043636](https://github.com/ahmedmo112/lab-managment-system/assets/78311079/6ca22c49-aec7-4097-b993-403a4542df32)
+![Screenshot 2023-08-14 043654](https://github.com/ahmedmo112/lab-managment-system/assets/78311079/4bc75003-7cd1-409c-959c-79202724c2ad)
+![Screenshot 2023-08-14 043709](https://github.com/ahmedmo112/lab-managment-system/assets/78311079/14dc6765-3fc5-48a7-b265-b3a56272e9f8)
 
 
 
