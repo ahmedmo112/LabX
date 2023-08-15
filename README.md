@@ -90,7 +90,7 @@ Follow these steps to set up and run the Lab Management System on your local mac
 
 This project was developed by
 - [Ahmed M. Hany](https://github.com/ahmedmo112)
-- [Mohamed Ehab](https://github.com/MoEhab27) (UI/UX Designer)
+- [Mohamed Ehab](https://github.com/MoEhab27) (also UI/UX Designer)
 - [Ahmed Reda](https://github.com/ahmedreda153)
 - [Shahd Salah](https://github.com/Unicorn2105)
 - [Salma Mohamed](https://github.com/salma12004)
